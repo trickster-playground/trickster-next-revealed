@@ -46,7 +46,7 @@ const TechStack = () => {
         </Link>
         <Link href='https://ui.shadcn.com/' className='pl-px'>
           <Image
-            src={'/static/icons/shadcn.svg'}
+            src={'/static/icons/shadcn-ui.svg'}
             alt='shad-cn'
             width={5}
             height={5}

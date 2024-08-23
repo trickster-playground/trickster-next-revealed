@@ -35,7 +35,7 @@ const Tags = () => {
           className={cn(`bg-gray-800`, className)}
         >
           <Image
-            src={'/static/icons/laravel.svg'}
+            src={'/static/icons/Laravel.svg'}
             alt='next-js'
             width={5}
             height={5}
@@ -84,11 +84,11 @@ const Tags = () => {
           className={cn(`bg-indigo-900`, className)}
         >
           <Image
-            src={'/static/icons/PHP-logo.svg'}
+            src={'/static/icons/php.svg'}
             alt='next-js'
             width={7}
             height={7}
-            className='size-7 invert'
+            className='size-7'
           />
           <div className='my-auto text-white'>Php</div>
         </Link>
