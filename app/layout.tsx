@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import SectionContainer from '@/components/SectionContainer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${inter.className} relative flex h-screen flex-col justify-between dark`}
       >
         <SectionContainer>{children}</SectionContainer>
+        <SpeedInsights />
       </body>
     </html>
   );
