@@ -8,15 +8,15 @@ const Header = () => {
         <Link href='/' className='flex items-center'>
           <div className='animate-pulse'>
             <Image
-              src={'/static/images/LogoTricksterBG.png'}
+              src={'/static/images/AmfmaLogo.png'}
               alt='logo'
-              width={40}
-              height={40}
-              className='invert'
+              width={50}
+              height={50}
+              className='-mb-2'
             />
           </div>
           <div className='group ml-2 text-xl font-bold transition duration-300'>
-            Trickster Dev.
+            AnDev.
             <span className='block h-0.5 max-w-0 bg-black transition-all duration-500 group-hover:max-w-[85%] dark:bg-white'></span>
           </div>
         </Link>

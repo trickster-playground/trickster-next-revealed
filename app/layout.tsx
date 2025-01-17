@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     template: '%s | Andi Muhammad Portfolio',
     default: 'Andi Muhammand - Known as Trickster Portfolio.'
   },
-  description: 'Trickster Revealed',
+  description: 'Andi Muhammad Fadhil Masyhun Arham Web Portfolio',
   icons: {
     icon: [
       {
-        url: '/icons/trickstericon.png',
-        href: '/icons/trickstericon.png'
+        url: '/icons/AmfmaLogo.png',
+        href: '/icons/AmfmaLogo.png'
       }
     ]
   }

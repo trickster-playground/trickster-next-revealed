@@ -9,7 +9,7 @@ const RecentProject = () => {
           Work Experience
         </h1>
         <p className='!mt-2 text-lg leading-7 text-blue-500'>
-          PT Tiara Pilar Kreasi | Elmarsdigitech - IT Consultant.
+          PT Tiara Pilar Kreasi | Web Programmer.
         </p>
       </div>
 
