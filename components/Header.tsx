@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const Header = () => {
   return (
     <header className='supports-backdrop-blur left-0 right-0 top-0 z-50 bg-card border-b border-primary py-4 backdrop-blur dark:bg-dark/75'>
@@ -8,15 +9,14 @@ const Header = () => {
         <Link href='/' className='flex items-center'>
           <div className='animate-pulse'>
             <Image
-              src={'/static/images/AmfmaLogo.png'}
+              src={'/static/images/logo.svg'}
               alt='logo'
               width={50}
               height={50}
-              className='-mb-2'
             />
           </div>
           <div className='group ml-2 text-xl font-bold transition duration-300'>
-            AnDev.
+            Andi.dev
             <span className='block h-0.5 max-w-0 bg-black transition-all duration-500 group-hover:max-w-[85%] dark:bg-white'></span>
           </div>
         </Link>

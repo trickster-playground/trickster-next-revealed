@@ -12,7 +12,11 @@ import Tags from '@/components/Tags';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Home | Andi Muhammad Portfolio'
+  title: {
+    default: 'Andi Muhammad`s - Relentless Learning Journey',
+    template: '%s | Andi Muhammad Learning Journey'
+  },
+  description: 'Andi Muhammad Fadhil Masyhun Arham Web Portfolio',
 };
 
 export default function Home() {

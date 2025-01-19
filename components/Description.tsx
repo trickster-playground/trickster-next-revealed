@@ -25,7 +25,7 @@ const Description = () => {
         </span>{' '}
         , particularly using{' '}
         <span className='text-blue-500 dark:text-blue-500 font-extrabold'>
-          Laravel.
+          Laravel Framework.
         </span>
       </p>
       <p>

@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Andi Muhammad Portfolio',
-    default: 'Andi Muhammand - Known as Trickster Portfolio.'
+    default: 'Andi Muhammad`s - Relentless Learning Journey',
+    template: '%s | Andi Muhammad Learning Journey'
   },
   description: 'Andi Muhammad Fadhil Masyhun Arham Web Portfolio',
   icons: {
