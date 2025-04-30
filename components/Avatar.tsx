@@ -13,7 +13,7 @@ export function Avatar() {
           src='/static/images/Avatar.jpeg'
           height={1000}
           width={1000}
-          className='size-60 w-full object-cover aspect-square rounded-md group-hover/card:shadow-xl'
+          className='size-80 w-full object-cover aspect-square rounded-md group-hover/card:shadow-xl'
           alt='thumbnail'
         />
       </CardItem>

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { PinContainer } from './ActernityUI/PinCard';
 import { projects } from '@/constant';
@@ -6,7 +7,7 @@ import Image from 'next/image';
 
 const Exploring = () => {
   return (
-    <div className='w-full max-w-4xl'>
+    <div className='w-full max-w-5xl'>
       <div className='space-y-2 py-6 md:space-y-5'>
         <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14'>
           Explore

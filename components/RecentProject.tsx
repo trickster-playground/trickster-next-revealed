@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 
+import { IconBook } from '@tabler/icons-react';
+
 const RecentProject = () => {
   return (
-    <div className='divide-y divide-gray-200 dark:divide-gray-700 max-w-4xl'>
+    <div className='divide-y divide-gray-200 dark:divide-gray-700 '>
       <div className='space-y-2 py-6 md:space-y-5'>
         <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14'>
           Work Experience
@@ -62,7 +64,7 @@ const RecentProject = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className='prose max-w-none text-gray-500 dark:text-gray-400'>
+                  <div className='prose max-w-none text-gray-300'>
                     An Information System to facilitate public communication and
                     information, provide transparent information for prospective
                     Rusunawa residents, and increase the efficiency of internal
@@ -70,12 +72,19 @@ const RecentProject = () => {
                     resident complaints.
                   </div>
                 </div>
-                <div className='text-base font-medium leading-6 text-destructive'>
+                <div className='flex gap-4 text-base font-medium leading-6 text-destructive'>
                   <Link
                     href={`https://rusunkite.pontianak.go.id/`}
                     className='text-primary hover:text-sky-600 dark:hover:text-sky-400'
                   >
                     Check site &rarr;
+                  </Link>
+                  <p className='text-white'>|</p>
+                  <Link
+                    href={`/documentation/rusunawa`}
+                    className='flex items-center gap-2   text-emerald-400 hover:text-emerald-500'
+                  >
+                    Documentation <IconBook className='size-5' />
                   </Link>
                 </div>
               </div>
@@ -124,14 +133,23 @@ const RecentProject = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className='prose max-w-none text-gray-500 dark:text-gray-400'>
+                  <div className='prose max-w-none text-gray-300'>
                     An Information System designed to assist the West Kalimantan
                     Province Regional Revenue Agency in monitoring and managing
                     regional levy receipts online and in real-time.
                   </div>
                 </div>
-                <div className='text-base font-medium leading-6 text-red-500'>
-                  Web is private
+                <div className='flex gap-4 text-base font-medium leading-6 text-destructive'>
+                  <p className='text-red-500'>
+                   Web is private
+                  </p>
+                  <p className='text-white'>|</p>
+                  <Link
+                    href={`/documentation/retribusi`}
+                    className='flex items-center gap-2   text-emerald-400 hover:text-emerald-500'
+                  >
+                    Documentation <IconBook className='size-5' />
+                  </Link>
                 </div>
               </div>
             </div>

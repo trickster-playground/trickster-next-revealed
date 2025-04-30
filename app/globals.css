@@ -31,6 +31,36 @@
     --chart-5: 27 87% 67%;
   }
 
+  .comic-button {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0051ff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000000;
+    transition: all 0.3s ease;
+}
+
+.comic-button:hover {
+    background-color: #fff;
+    color: #0051ff;
+    border: 2px solid #0051ff;
+    box-shadow: 5px 5px 0px #0051ff;
+}
+
+.comic-button:active {
+    border-color: #0051ff;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

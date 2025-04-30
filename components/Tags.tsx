@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const Tags = () => {
-  const className = `flex w-[128px] justify-center items-center space-x-2 rounded-lg p-3 border border-white border-2`;
+  const className = `flex w-[128px] justify-center items-center space-x-2 rounded-lg p-3 border-white border-2`;
   return (
     <div className='divide-y divide-gray-200 dark:divide-gray-700'>
       <div className='space-y-2 py-6 md:space-y-5'>
