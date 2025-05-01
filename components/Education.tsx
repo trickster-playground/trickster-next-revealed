@@ -1,3 +1,4 @@
+import { IconBook } from '@tabler/icons-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -81,12 +82,19 @@ const Education = () => {
                     shops in Pontianak City in organizing gaming tournaments.
                   </div>
                 </div>
-                <div className='text-base font-medium leading-6 text-destructive'>
+                <div className='flex  gap-4 text-base font-medium leading-6 text-destructive'>
                   <Link
                     href={`https://gamersworld-ptk.elmarsdigitech.com/`}
                     className='text-primary hover:text-sky-600 dark:hover:text-sky-400'
                   >
                     Check site &rarr;
+                  </Link>
+                  <p className='text-white'>|</p>
+                  <Link
+                    href={`/documentation/esports-system`}
+                    className='flex items-center gap-2   text-emerald-400 hover:text-emerald-500'
+                  >
+                    Documentation <IconBook className='size-5' />
                   </Link>
                 </div>
               </div>
