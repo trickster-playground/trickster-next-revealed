@@ -65,7 +65,8 @@ const Exploring = () => {
                         transform: `translateX(-${5 * index + 2}px)`
                       }}
                     >
-                      <img src={icon} alt='icon5' className='p-2' />
+                      <Image src={icon} width={1000}
+                        height={1000} alt='icon5' className='p-2' />
                     </div>
                   ))}
                 </div>

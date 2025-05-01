@@ -1,173 +1,107 @@
-import Header from '@/components/Header';
-import React from 'react';
-import { IconBook } from '@tabler/icons-react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { cn } from '@/lib/utils';
+import ProjectLayout from '@/components/ProjectLayout';
 
-const page = () => {
-  const className = `flex w-full justify-center items-center space-x-2 rounded-lg p-3 border-2 border-white`;
-  return (
-    <div>
-      <Header />
-      <div className='divide-y divide-gray-200 dark:divide-gray-700 max-w-4xl'>
-        <div className='space-y-2 py-6 md:space-y-5'>
-          <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14'>
-            Sistem Informasi Retribusi Daerah Provinsi Kalimantan Barat
-          </h1>
-          <p className='!mt-2 text-lg leading-3 text-blue-500'>
-            By PT Tiara Pilar Kreasi
-          </p>
-          <div className='popular-tags grid grid-cols-3 gap-4 py-1 xl:grid-cols-6'>
-            <Link
-              href='https://laravel.com/'
-              className={cn(`bg-gray-800`, className)}
-            >
-              <Image
-                src={'/static/icons/Laravel.svg'}
-                alt='next-js'
-                width={5}
-                height={5}
-                className='h-6 w-6'
-              />
-              <div className='my-auto text-white'>Laravel</div>
-            </Link>
-            <Link
-              href='https://laravel.com/'
-              className={cn(`bg-purple-800`, className)}
-            >
-              <Image
-                src={'/static/icons/bootstrap.svg'}
-                alt='next-js'
-                width={5}
-                height={5}
-                className='h-7 w-7'
-              />
-              <div className='my-auto text-white'>Bootstrap</div>
-            </Link>
-            <Link
-              href='https://www.javascript.com/'
-              className={cn(`bg-yellow-600`, className)}
-            >
-              <Image
-                src={'/static/icons/javascript2.svg'}
-                alt='next-js'
-                width={5}
-                height={5}
-                className='h-6 w-6 '
-              />
-              <div className='my-auto text-white'>Javascript</div>
-            </Link>
-            <Link
-              href='https://www.php.net/'
-              className={cn(`bg-indigo-900`, className)}
-            >
-              <Image
-                src={'/static/icons/php.svg'}
-                alt='next-js'
-                width={7}
-                height={7}
-                className='size-7'
-              />
-              <div className='my-auto text-white'>Php</div>
-            </Link>
-            <Link
-              href='https://www.mysql.com/'
-              className={cn(`bg-slate-700`, className)}
-            >
-              <Image
-                src={'/static/icons/mysql.svg'}
-                alt='next-js'
-                width={5}
-                height={5}
-                className='h-6 w-6 '
-              />
-              <div className='my-auto text-white'>MySQL</div>
-            </Link>
-            
-          </div>
-        </div>
-
-        <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
-          <li className='py-6'>
-            <article>
-              <div className='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0'>
-                <dl>
-                  <dt className='sr-only'>Published on</dt>
-                  <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
-                    <time>April 2023 - August 2024</time>
-                  </dd>
-                </dl>
-                <div className='space-y-5 xl:col-span-3'>
-                  <div className='space-y-4'>
-                    <div>
-                      <h2 className='text-2xl font-bold leading-8 tracking-tight'>
-                        <Link
-                          href={'/'}
-                          className='text-gray-900 dark:text-gray-100'
-                        >
-                          Sistem Informasi Rusunawa Dinas Perumahan dan
-                          Permukiman Kota Pontianak
-                        </Link>
-                      </h2>
-                      <div className='flex flex-wrap'>
-                        <Link
-                          href={`/`}
-                          className='mr-3 text-sm font-medium uppercase text-primary hover:text-sky-600 dark:hover:text-sky-400'
-                        >
-                          Laravel 10
-                        </Link>
-                        <Link
-                          href={`/`}
-                          className='mr-3 text-sm font-medium uppercase text-primary hover:text-sky-600 dark:hover:text-sky-400'
-                        >
-                          Livewire
-                        </Link>
-                        <Link
-                          href={`/`}
-                          className='mr-3 text-sm font-medium uppercase text-primary hover:text-sky-600 dark:hover:text-sky-400'
-                        >
-                          Filament
-                        </Link>
-                        <Link
-                          href={`/`}
-                          className='mr-3 text-sm font-medium uppercase text-primary hover:text-sky-600 dark:hover:text-sky-400'
-                        >
-                          MySQL
-                        </Link>
-                      </div>
-                    </div>
-                    <div className='prose max-w-none text-gray-300'>
-                      An Information System to facilitate public communication
-                      and information, provide transparent information for
-                      prospective Rusunawa residents, and increase the
-                      efficiency of internal data management such as room data,
-                      occupants, payments and resident complaints.
-                    </div>
-                  </div>
-                  <div className='flex gap-4 text-base font-medium leading-6 text-destructive'>
-                    <Link
-                      href={`https://rusunkite.pontianak.go.id/`}
-                      className='text-primary hover:text-sky-600 dark:hover:text-sky-400'
-                    >
-                      Check site &rarr;
-                    </Link>
-                    <p className='text-white'>|</p>
-                    <Link
-                      href={`/documentation/rusunawa`}
-                      className='flex items-center gap-2   text-emerald-400 hover:text-emerald-500'
-                    >
-                      Documentation <IconBook className='size-5' />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+const retribusiProject = {
+  title: 'Sistem Informasi Retribusi Daerah Provinsi Kalimantan Barat',
+  author: 'PT Tiara Pilar Kreasi',
+  duration: 'May 2022 – February 2023',
+  summary: 'A web-based information system to to assist the West Kalimantan Province Regional Revenue Agency in monitoring and managing regional levy receipts online and in real-time.',
+  techs: [
+    { name: 'Laravel', icon: '/static/icons/Laravel.svg', link: 'https://laravel.com/', className: 'bg-red-800' },
+    { name: 'Bootstrap', icon: '/static/icons/bootstrap.svg', link: 'https://getbootstrap.com/', className: 'bg-purple-700' },
+    { name: 'PHP', icon: '/static/icons/php.svg', link: 'https://php.net/', className: 'bg-indigo-800' },
+    { name: 'MySQL', icon: '/static/icons/mysql.svg', link: 'https://mysql.com/', className: 'bg-gray-700' },
+    { name: 'JavaScript', icon: '/static/icons/javascript2.svg', link: 'https://javascript.com/', className: 'bg-yellow-600' },
+  ],
+  features: [
+    'Online submission of Regional Retribution Object Registration Forms (SPORD)',
+    'Automatic tariff calculation based on local regulations',
+    'Secure multi-user access with individual login credentials',
+    'Online issuance and tracking of SKRD (Regional Retribution Determination Letters)',
+    'Online issuance and tracking of STS (Payment Receipts)',
+    'Automatic generation and recording of SSRD (Regional Retribution Deposit Summaries)',
+    'Real-time revenue monitoring and reporting dashboard for the Regional Revenue Agency (BAPENDA)',
+  ],
+  gallery: [
+    {
+      image: '/static/images/projects/retribusi/Slide1.png',
+      title: 'Web Profile - Homepage',
+      caption: 'The main homepage provides intuitive navigation to various information regarding regional retribution in West Kalimantan.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide2.png',
+      title: 'Web Profile - About',
+      caption: 'Describes Public Service Retribution, Business Retribution, Specific Licensing, and the roles and responsibilities of the retribution division.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide3.png',
+      title: 'Web Profile - Service',
+      caption: 'Contains information on available services along with links to retribution object tariffs.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide4.png',
+      title: 'Web Profile - Unit',
+      caption: 'Lists government agencies or units (OPD/UPT) responsible for managing retribution in West Kalimantan.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide5.png',
+      title: 'Web Profile - Team',
+      caption: 'Provides information about the retribution management team, including member photos, names, and roles.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide6.png',
+      title: 'Web Profile - SPORD',
+      caption: 'Includes the login and registration forms for SPORD, along with a visual guide to the submission process.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide7.png',
+      title: 'Web Profile - SPORD Dashboard Admin',
+      caption: 'Admin dashboard for managing and tracking SPORD submissions.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide8.png',
+      title: 'Web Profile - SPORD',
+      caption: 'User dashboard to view and manage submitted SPORD data.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide9.png',
+      title: 'Web Profile - SPORD Detail',
+      caption: 'Displays detailed SPORD submission information with a print option.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide10.png',
+      title: 'Retribution Web [Internal] - Login',
+      caption: 'Login interface for Bapenda/OPD to access the retribution recap system.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide11.png',
+      title: 'Retribution Web [Internal] - Dashboard',
+      caption: 'Displays SKRD, STS, and annual recap statistics using interactive charts.'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide12.png',
+      title: 'Retribution Web [Internal] - SKRD Wizard Form',
+      caption: 'Displays the SKRD Wizard Form used for managing and generating Regional Retribution Determination Letters (SKRD).'
+    },
+    {
+      image: '/static/images/projects/retribusi/Slide13.png',
+      title: 'Retribution Web [Internal] - SKRD Detail',
+      caption: 'Shows detailed information of the SKRD along with associated STS and annual recap statistics for monitoring and reporting.'
+    }
+  ],
+  flow: 'User → Register on Web Profile → Login → Fill SPORD Form → Form Verification → Forward to OPD → SKRD Creation → Payment at Bank → STS Issuance → SSRD Compilation → BAPENDA Report → Meeting Discussion',
+  contributions: [
+    'Developed using Laravel',
+    'Built the user interface using Laravel Blade',
+    'Integrated the database using MySQL',
+    'Deployed the system to the production server',
+    'Collaborated with BAPENDA for feedback on the system\'s features',
+    'Tested system functionality and ensured compatibility across different browsers and devices',
+    'Worked with a team of developers to ensure timely project delivery',
+    'Created user documentation',
+  ],
+  reflection: 'This project sharpened my skills in developing regional-scale information systems and collaborating with non-technical teams. I gained experience in understanding government processes, integrating them into a digital platform, and working on a real-world project with a significant impact on public services.',
 };
 
-export default page;
+export default function RetribusiProjectPage() {
+  return <ProjectLayout project={retribusiProject} />;
+}

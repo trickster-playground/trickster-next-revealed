@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const Tags = () => {
-  const className = `flex w-[128px] justify-center items-center space-x-2 rounded-lg p-3 border-white border-2`;
+  const className = `flex w-[128px] justify-center items-center space-x-2 rounded-lg p-3 border-white border-2 transition hover:brightness-110`;
   return (
     <div className='divide-y divide-gray-200 dark:divide-gray-700'>
       <div className='space-y-2 py-6 md:space-y-5'>
@@ -36,7 +36,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/Laravel.svg'}
-            alt='next-js'
+            alt='laravel'
             width={5}
             height={5}
             className='h-6 w-6 '
@@ -46,12 +46,32 @@ const Tags = () => {
         <Link href='https://react.dev/' className={cn(`bg-sky-600`, className)}>
           <Image
             src={'/static/icons/react.svg'}
-            alt='next-js'
+            alt='react'
             width={5}
             height={5}
             className='h-6 w-6 '
           />
           <div className='my-auto text-white'>React</div>
+        </Link>
+        <Link href='https://getbootstrap.com/' className={cn(`bg-purple-700`, className)}>
+          <Image
+            src={'/static/icons/bootstrap.svg'}
+            alt='bootstrap'
+            width={5}
+            height={5}
+            className='h-6 w-6 '
+          />
+          <div className='my-auto text-white'>Bootstrap</div>
+        </Link>
+        <Link href='https://tailwindcss.com/' className={cn(`bg-sky-700`, className)}>
+          <Image
+            src={'/static/icons/tailwind.svg'}
+            alt='tailwind'
+            width={5}
+            height={5}
+            className='h-6 w-6 '
+          />
+          <div className='my-auto text-white'>Tailwind</div>
         </Link>
         <Link
           href='https://www.typescriptlang.org/'
@@ -59,7 +79,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/typescript.svg'}
-            alt='next-js'
+            alt='typescript'
             width={5}
             height={5}
             className='h-6 w-6 '
@@ -72,7 +92,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/javascript2.svg'}
-            alt='next-js'
+            alt='javascript'
             width={5}
             height={5}
             className='h-6 w-6 '
@@ -85,7 +105,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/php.svg'}
-            alt='next-js'
+            alt='php'
             width={7}
             height={7}
             className='size-7'
@@ -98,7 +118,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/mysql.svg'}
-            alt='next-js'
+            alt='mysql'
             width={5}
             height={5}
             className='h-6 w-6 '
@@ -111,7 +131,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/postgres.svg'}
-            alt='next-js'
+            alt='postgresql'
             width={5}
             height={5}
             className='h-6 w-6 '
@@ -124,7 +144,7 @@ const Tags = () => {
         >
           <Image
             src={'/static/icons/mongodb.svg'}
-            alt='next-js'
+            alt='mongodb'
             width={5}
             height={5}
             className='h-6 w-6 '
@@ -134,26 +154,14 @@ const Tags = () => {
         <Link href='https://github.com/' className={cn(`bg-black`, className)}>
           <Image
             src={'/static/icons/github.svg'}
-            alt='next-js'
+            alt='github'
             width={5}
             height={5}
             className='h-6 w-6 invert'
           />
           <div className='my-auto text-white'>Github</div>
         </Link>
-        <Link
-          href='https://git-scm.com/'
-          className={cn(`bg-white/50`, className)}
-        >
-          <Image
-            src={'/static/icons/git.svg'}
-            alt='next-js'
-            width={5}
-            height={5}
-            className='h-6 w-6'
-          />
-          <div className='my-auto text-white'>Git</div>
-        </Link>
+
       </div>
     </div>
   );
