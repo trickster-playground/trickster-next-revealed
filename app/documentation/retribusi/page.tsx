@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const page = () => {
-  const className = `flex w-[128px] justify-center items-center space-x-2 rounded-lg p-3 border-2 border-white`;
+  const className = `flex w-full justify-center items-center space-x-2 rounded-lg p-3 border-2 border-white`;
   return (
     <div>
       <Header />
