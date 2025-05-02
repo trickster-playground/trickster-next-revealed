@@ -16,7 +16,7 @@ const Tags = () => {
         </p>
       </div>
 
-      <div className='popular-tags grid grid-cols-3 gap-4 py-6 xl:grid-cols-6'>
+      <div className='popular-tags grid grid-cols-3 gap-4 py-6 xl:grid-cols-6 text-white brightness-110'>
         <Link
           href='https://nextjs.org/'
           className={cn(`bg-blue-800`, className)}

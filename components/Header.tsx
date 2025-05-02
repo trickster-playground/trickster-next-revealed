@@ -1,11 +1,11 @@
 'use client';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+
 import {
+  IconBook,
   IconBrandGmail,
   IconBrandWhatsapp,
+  IconHome,
   IconMenu2,
-  IconX
 } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,8 +19,6 @@ import {
 } from './ShadCN/Sheet';
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <header className='supports-backdrop-blur left-0 right-0 top-0 z-50 bg-card border-b border-primary py-4 backdrop-blur dark:bg-dark/75'>
       <div className='mx-auto flex max-w-4xl items-center justify-between px-3 xl:max-w-5xl xl:px-0'>
@@ -59,28 +57,47 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Feel free to contact me</SheetTitle>
+              <SheetTitle className='text-xl'>Feel free to contact me</SheetTitle>
               <SheetDescription>
-                <div className='flex flex-col items-start gap-4 mt-2'>
-                  <p className='flex items-center gap-2 text-lg text-white'>
-                    <IconBrandGmail
-                      stroke={1}
-                      className='text-red-500 size-6'
-                    />
-                    my.andimhmmad14@gmail.com
-                  </p>
-                  <p className='flex items-center gap-2 text-lg text-white'>
-                    <IconBrandWhatsapp
-                      stroke={1}
-                      className='text-green-500 size-6'
-                    />
-                    +62 821 - 5790 - 2445
-                  </p>
+                <div className='flex flex-col items-start gap-4 mt-2 divide-y divide-gray-700'>
+                  {/* Kontak */}
+                  <div className='flex flex-col items-start gap-2 pt-4 w-full'>
+                    <p className='flex items-center gap-2 text-lg text-white'>
+                      <IconBrandGmail stroke={1} className='text-red-500 size-6' />
+                      my.andimhmmad14@gmail.com
+                    </p>
+                    <p className='flex items-center gap-2 text-lg text-white'>
+                      <IconBrandWhatsapp stroke={1} className='text-green-500 size-6' />
+                      +62 821 - 5790 - 2445
+                    </p>
+                  </div>
+
+                  {/* Menu Navigasi */}
+                  <div className='flex flex-col items-start gap-4 w-full '>
+                    <Link
+                      href='/'
+                      className='text-lg text-white hover:text-sky-400 transition-colors duration-150 mt-4 flex items-center gap-2'
+                    >
+                      <IconHome stroke={1} className='text-blue-500 size-6' />
+                      Homepage
+                    </Link>
+                    <Link
+                      href='/documentation'
+                      className='text-lg text-white hover:text-sky-400 transition-colors duration-150 flex items-center gap-2'
+                    >
+                      <IconBook stroke={1} className='text-green-500 size-6' />
+                      Documentation
+                    </Link>
+                  </div>
+
+
+
                 </div>
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
         </Sheet>
+
       </div>
     </header>
   );

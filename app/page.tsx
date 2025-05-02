@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className='w-full max-w-4xl'>
+    <main className='w-full max-w-4xl px-4'>
       <Header />
       <div className='mb-auto mt-6'>
         <div className='dark:divide-gray-700'>

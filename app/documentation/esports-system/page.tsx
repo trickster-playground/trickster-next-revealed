@@ -1,7 +1,7 @@
 import ProjectLayout from '@/components/ProjectLayout';
 
 const esportsProject = {
-  title: 'E-Sports Tournament Information System and Gaming Caféin Pontianak City Based on Website',
+  title: 'E-Sports Tournament Information System and Gaming Café in Pontianak City Based on Website',
   author: 'Andi Muhammad Fadhil Masyhun Arham',
   duration: 'Desember 2022 - January 2024',
   summary: 'A website-based information system designed to help gamers find information about tournaments and coffee shop references for gaming in Pontianak City.This system includes locations and reviews from gamers who have visited the coffee shops.Additionally, it aims to assist coffee shops in Pontianak City in organizing gaming tournaments.',
@@ -44,13 +44,33 @@ const esportsProject = {
     },
     {
       image: '/static/images/projects/esports-system/Slide5.png',
-      title: 'Gaming Cafés - Details',
-      caption: 'Detail of Gaming Cafés with Form Review.'
+      title: 'Seamlessly Add New Gaming Cafés',
+      caption: 'Admins and business accounts can effortlessly add new gaming café locations using interactive Leaflet JS maps.'
     },
     {
       image: '/static/images/projects/esports-system/Slide6.png',
+      title: 'Gaming Cafés - Details',
+      caption: 'Detail of Gaming Cafés with Review.'
+    },
+    {
+      image: '/static/images/projects/esports-system/Slide7.png',
       title: 'Tournament Page',
       caption: 'Shows all tournament on website.'
+    },
+    {
+      image: '/static/images/projects/esports-system/Slide8.png',
+      title: 'Tournament Details',
+      caption: 'Get a comprehensive view of every tournament—participants, schedules, and results, all in one place.'
+    },
+    {
+      image: '/static/images/projects/esports-system/Slide9.png',
+      title: 'Dashboard for Tournament Organizers',
+      caption: 'Visualize your tournaments with dynamic charts and insights designed to help organizers stay in control.'
+    },
+    {
+      image: '/static/images/projects/esports-system/Slide10.png',
+      title: 'Dashboard for Tournament Organizers',
+      caption: 'Easily manage tournaments with seamless integration to Challonge brackets—organize, monitor, and update in real time.'
     },
   ],
   flow: 'User → Register → View Tournament Info → Register Tim → Verified Team → Join Tournament → Play Tournament → Win Tournament',
