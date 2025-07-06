@@ -17,6 +17,7 @@ import {
   SheetTitle,
   SheetTrigger
 } from './ShadCN/Sheet';
+import ContactDialog from './ContactDialog';
 
 export default function Header() {
   return (
@@ -39,15 +40,18 @@ export default function Header() {
         </Link>
 
         {/* Kontak */}
-        <div className='hidden md:flex items-center text-base leading-5 gap-5'>
+        <div className='hidden md:flex items-center text-base leading-5 gap-5 text-md'>
           <p className='flex items-center gap-1'>
             <IconBrandGmail stroke={1} className='text-red-500 size-6' />
             my.andimhmmad14@gmail.com
           </p>
           <p className='flex items-center gap-1'>
             <IconBrandWhatsapp stroke={1} className='text-green-500 size-6' />
-            +62 821 - 5790 - 2445
+            +62 821-5790-2445
           </p>
+          <div className='max-w-md'>
+            <ContactDialog />
+          </div>
         </div>
 
         {/* Tombol Hamburger */}
@@ -68,8 +72,11 @@ export default function Header() {
                     </p>
                     <p className='flex items-center gap-2 text-lg text-white'>
                       <IconBrandWhatsapp stroke={1} className='text-green-500 size-6' />
-                      +62 821 - 5790 - 2445
+                      +62 821-5790-2445
                     </p>
+                    <div className='flex items-center justify-center w-full'>
+                      <ContactDialog />
+                    </div>
                   </div>
 
                   {/* Menu Navigasi */}
@@ -89,9 +96,6 @@ export default function Header() {
                       Documentation
                     </Link>
                   </div>
-
-
-
                 </div>
               </SheetDescription>
             </SheetHeader>

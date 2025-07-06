@@ -5,7 +5,8 @@ import {
   IconBrandInstagram,
   IconMapPin,
   IconBrandWhatsapp,
-  IconBrandLinkedin
+  IconBrandLinkedin,
+  IconBrandTelegram
 } from '@tabler/icons-react';
 import { FloatingDock } from './ActernityUI/FloatingDocks';
 
